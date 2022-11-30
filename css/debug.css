@@ -1,7 +1,4 @@
 /* debug */
-.debug main{
-    display: flex;
-}
 .debug .box{
     background-color: azure;
     height: 50px;
@@ -9,6 +6,19 @@
 .debug #body{
     position: relative;
 }
+
+
+.debug .top-page{
+    display: flex;
+}
+
+
+
+
+
+
+
+
 /* aside  */
 .debug aside{
     background-color: #333;
@@ -31,15 +41,49 @@
 
 
 
-/* section  */
-.debug #main{
+
+
+
+
+
+
+
+
+
+
+/* main  */
+.debug main{
     background-color: lightblue;
     height: calc(100vh - var(--height-footer));
     width: calc(100% - var(--width-aside));
 }
+.debug main #upgrade{
+    position: sticky;
+    top: 0;
+    background-color: rgba(255, 0, 0, 0.5);
+    height: var(--height-footer);
+}
+.debug main #navigation{
+    background-color: lightcyan;
+}
+.debug main #navigation ul{
+    display: flex;
+    justify-content:center ;
+    gap: 20px;
+}
+
+
+
+
+
+
+
+
+
+
 
 /* footer  */
-.debug #footer{
+.debug footer{
     position: fixed;
     bottom: 0;
     z-index: 20;
