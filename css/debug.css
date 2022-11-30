@@ -5,14 +5,18 @@
 .debug .box{
     background-color: azure;
     height: 50px;
-    width: 50px
+}
+.debug #body{
+    position: relative;
 }
 /* aside  */
 .debug aside{
     background-color: #333;
     height: calc(100vh - var(--height-footer));
     width: var(--width-aside);
-    posi
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 .debug aside .aside-img{
     background-color: lightcoral;
@@ -23,14 +27,10 @@
 }
 .debug aside .aside-playlist{
     background-color: lightpink;
-    min-height: 300px;
 }
-.debug aside .aside-footer{
 
-}
-.debug aside .aside-footer .aside-fot-ky{
-    
-}
+
+
 /* section  */
 .debug #main{
     background-color: lightblue;
@@ -40,6 +40,9 @@
 
 /* footer  */
 .debug #footer{
+    position: fixed;
+    bottom: 0;
+    z-index: 20;
     background-color: lightgray;
     width: 100%;
     height: var(--height-footer);
