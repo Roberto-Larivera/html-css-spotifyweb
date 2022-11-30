@@ -6,7 +6,28 @@
 }
 
 /* generali */
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+
 :root{
     --width-aside: 250px;
     --height-footer: 100px;
+    --mgn-bt-a: 10px;
+    --mgn-bt-i: 1.5rem;
+
+
+    --color-light: white;
+    --color-gray:#808080;
+}
+
+a{
+    text-transform: capitalize;
+    text-decoration: none;
+    color: var(--color-gray);
+    font-weight: 600;
+}
+li{
+    list-style-type: none;
 }

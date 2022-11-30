@@ -1,6 +1,6 @@
 /* debug */
 .debug .box{
-    background-color: azure;
+
     height: 50px;
 }
 .debug #body{
@@ -14,7 +14,7 @@
 
 
 .debug .container{
-    padding: 0 20px;
+    padding: 20px;
 }
 
 
@@ -22,23 +22,23 @@
 
 
 /* aside  */
-.debug aside{
+/* .debug aside{
     background-color: #333;
     height: calc(100vh - var(--height-footer));
     width: var(--width-aside);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-}
-.debug aside .aside-img{
+} */
+/* .debug aside .aside-img{
     background-color: lightcoral;
     min-height: 50px;
-}
+} */
 .debug aside .aside-nav{
-    background-color: lightcyan;
+
 }
 .debug aside .aside-playlist{
-    background-color: lightpink;
+
 }
 
 
@@ -55,7 +55,7 @@
 
 /* main  */
 .debug main{
-    background-color: lightblue;
+
     height: calc(100vh - var(--height-footer));
     width: calc(100% - var(--width-aside));
     overflow: auto;
