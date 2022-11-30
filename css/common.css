@@ -6,3 +6,7 @@
 }
 
 /* generali */
+:root{
+    --width-aside: 250px;
+    --height-footer: 100px;
+}
