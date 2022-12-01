@@ -58,7 +58,7 @@ aside .aside-footer hr{
     margin: var(--mgn-bt-a) 0;
 }
 aside .aside-playlist{
-    max-height: 300px;
+    max-height: 210px;
     overflow: auto;
 }
 
@@ -79,3 +79,12 @@ main{
 
 
 /* footer  */
+.debug footer{
+    position: relative;
+    z-index: 20;
+    background-color: lightgray;
+    width: 100%;
+    height: var(--height-footer);
+    display: flex;
+    justify-content: space-between;
+}

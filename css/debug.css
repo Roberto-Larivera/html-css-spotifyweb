@@ -140,12 +140,12 @@
 .debug footer{
     /* position: fixed;
     bottom: 0; */
-    z-index: 20;
+    /* z-index: 20;
     background-color: lightgray;
     width: 100%;
     height: var(--height-footer);
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between; */
 }
 .debug .foot-first,
 .debug .foot-center,
