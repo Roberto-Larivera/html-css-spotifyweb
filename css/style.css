@@ -94,7 +94,19 @@ aside .aside-playlist{
 aside .aside-profile a{
     font-weight: 700;
 }
-
+aside .aside-download img{
+    filter: invert(0.5);
+}
+aside .aside-profile img{
+    width: 25px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    background-color: var(--color-gray);
+}
+aside .aside-download img{
+    width: 18px;
+    aspect-ratio: 1/1;
+}
 
 /* main  */
 main{
