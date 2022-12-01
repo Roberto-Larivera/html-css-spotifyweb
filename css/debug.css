@@ -61,18 +61,15 @@
 
 
 /* navigation */
-.debug #navigation{
-    background-color: lightcyan;
-}
-.debug #navigation ul{
-    display: flex;
-    justify-content:center ;
-    flex-wrap: wrap;
-    gap: 20px;
-}
+
+
 
 /* card generale */
+.debug .card{
+    background-color: aliceblue;
+    min-height: 200px;
 
+}
 
 
 

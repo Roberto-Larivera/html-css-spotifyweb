@@ -12,30 +12,39 @@ aside{
     min-height: 500px;
     width: var(--width-aside);
     background-color: #333;
-    padding: 20px;
+    /* padding: 20px; */
 }
 aside .aside-header{
-    height: calc(100% - 70px);
+    height: calc(100% - 100px);
 }
 aside .aside-footer{
-    height: 70px;
+    height: 100px;
     background-color: #333;
     position: relative;
     z-index: 2;
-    padding-top: 10px;
+    padding: var(--padding-aside);
 }
 aside .aside-img img{
-    width: 150px;
+    width: 90%;
     margin-bottom: var(--mgn-bt-i);
+    padding: var(--padding-aside);
 }
 aside .aside-nav{
     margin-bottom: var(--mgn-bt-i);
+    /* border-left: 2px solid greenyellow; */
+    /* padding: 0 var(--padding-aside); */
+}
+aside .aside-nav li{
+    padding: 0 var(--padding-aside);
 }
 aside .aside-nav li,
 aside .aside-footer >div{
     display: flex;
     align-items: center;
     gap: var(--mgn-bt-a);
+}
+aside .aside-playlist{
+    padding-left: var(--padding-aside);
 }
 aside .aside-nav li,
 aside .aside-playlist li{
@@ -46,8 +55,12 @@ aside .aside-nav img,
 aside .aside-footer img{
     width: 1.5rem;
 }
+aside .aside-nav li:first-child{
+    border-left: var(--active-page-br);
+    /* padding-left: var(--padding-aside); */
+}
 aside .aside-nav li:first-child a,
-aside .aside-footer a:last-child{
+aside .aside-profile a{
     color: var(--color-light);
 }
 
@@ -71,6 +84,9 @@ aside .aside-playlist{
     height: 40%;
     overflow: auto;
 }
+aside .aside-profile a{
+    font-weight: 700;
+}
 
 
 /* main  */
@@ -89,19 +105,40 @@ main{
     height: var(--height-footer);
 }
 
+
+
+
+/* navigation */
+#navigation{
+    margin: var(--mgn-bt-card) 0;
+}
+#navigation ul{
+    display: flex;
+    justify-content:center ;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+#navigation ul li{
+    padding: 5px;
+}
+#navigation ul li:first-child{
+    border-bottom: var(--active-page-br);
+}
 /* cards */
 .playlist .cards{
     display: flex;
     flex-wrap: wrap;
 }
 .playlist .card{
-    background-color: aliceblue;
     width: calc((100% / 6) - 10px);
     margin-right: 10px;
-    margin-bottom: 30px;
-    min-height: 200px;
+    margin-bottom: var(--mgn-bt-card);
 }
-
+.playlist p{
+    color: var(--color-gray);
+    font-weight: 600;
+    margin-bottom: var(--mgn-bt-a);
+}
 
 
 
