@@ -7,12 +7,6 @@
     position: relative;
 }
 
-
-.debug .top-page{
-    display: flex;
-}
-
-
 .debug .container{
     padding: 20px;
 }
@@ -54,12 +48,7 @@
 
 
 /* main  */
-.debug main{
 
-    height: calc(100vh - var(--height-footer));
-    width: calc(100% - var(--width-aside));
-    overflow: auto;
-}
 
 
 /* upgrade */
