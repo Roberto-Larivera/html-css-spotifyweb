@@ -72,15 +72,6 @@
 }
 
 /* card generale */
-.debug .playlist .cards{
-    display: flex;
-    gap: 10px;
-}
-.debug .playlist .card{
-    background-color: aliceblue;
-    width: calc(100% / 6);
-    min-height: 200px;
-}
 
 
 

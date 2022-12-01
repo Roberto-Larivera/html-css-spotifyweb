@@ -82,8 +82,25 @@ main{
 }
 
 
+#upgrade{
+    position: sticky;
+    top: 0;
+    background-color: rgba(255, 0, 0, 0.5);
+    height: var(--height-footer);
+}
 
-
+/* cards */
+.playlist .cards{
+    display: flex;
+    flex-wrap: wrap;
+}
+.playlist .card{
+    background-color: aliceblue;
+    width: calc((100% / 6) - 10px);
+    margin-right: 10px;
+    margin-bottom: 30px;
+    min-height: 200px;
+}
 
 
 
