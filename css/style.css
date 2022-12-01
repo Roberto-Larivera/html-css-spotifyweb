@@ -6,12 +6,18 @@
 }
 
 
+
+
+
+
+
+
 /* aside  */
 aside{
     height: 100%;
     min-height: 500px;
     width: var(--width-aside);
-    background-color: #333;
+    background-color: black;
     /* padding: 20px; */
 }
 aside .aside-header{
@@ -19,7 +25,7 @@ aside .aside-header{
 }
 aside .aside-footer{
     height: 100px;
-    background-color: #333;
+    background-color: black;
     position: relative;
     z-index: 2;
     padding: var(--padding-aside);
@@ -34,7 +40,8 @@ aside .aside-nav{
     /* border-left: 2px solid greenyellow; */
     /* padding: 0 var(--padding-aside); */
 }
-aside .aside-nav li{
+aside .aside-nav li,
+aside .aside-button{
     padding: 0 var(--padding-aside);
 }
 aside .aside-nav li,
@@ -98,14 +105,23 @@ main{
 }
 
 
+/* upgrade */
 #upgrade{
     position: sticky;
     top: 0;
-    background-color: rgba(255, 0, 0, 0.5);
-    height: var(--height-footer);
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 15px;
+    text-align: right;
 }
-
-
+#upgrade a{
+    text-decoration: none;
+    padding: 10px 20px;
+    border: 1px solid var(--color-light);
+    color: var(--color-light);
+    display: inline-block;
+    border-radius: 25px;
+    
+}
 
 
 /* navigation */
@@ -125,9 +141,18 @@ main{
     border-bottom: var(--active-page-br);
 }
 /* cards */
+.playlist{
+    width: 100%;
+    padding: 20px;
+}
+.playlist .row{
+    width: 100%;
+}
 .playlist .cards{
     display: flex;
     flex-wrap: wrap;
+    width: 100%;
+    overflow-x: auto;
 }
 .playlist .card{
     width: calc((100% / 6) - 10px);
@@ -145,7 +170,7 @@ main{
 
 
 /* footer  */
-.debug footer{
+footer{
     position: relative;
     z-index: 20;
     background-color: lightgray;
