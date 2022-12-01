@@ -13,11 +13,13 @@ body{
 
 :root{
     --width-aside: 250px;
+    --width-aside-mq: 70px;
     --height-footer: 100px;
     --mgn-bt-a: 10px;
     --mgn-bt-i: 1.5rem;
     --mgn-bt-card: 30px;
     --padding-aside: 20px;
+    --padding-aside-mq: 10px;
 
 
     --color-light: white;

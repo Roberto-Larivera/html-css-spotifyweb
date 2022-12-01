@@ -35,6 +35,9 @@ aside .aside-img img{
     margin-bottom: var(--mgn-bt-i);
     padding: var(--padding-aside);
 }
+#logo-small{
+    display: none;
+}
 aside .aside-nav{
     margin-bottom: var(--mgn-bt-i);
     /* border-left: 2px solid greenyellow; */
@@ -213,8 +216,20 @@ footer .foot-first a,
 footer .foot-first i{
     color: gray;
 }
+footer .foot-first h5{
+    color: var(--color-light);
+}
+footer .foot-first a{
+    font-size: 0.8rem;
+}
 
-
+/* footer .foot-first,
+footer .foot-last{
+    width: 25%;
+}
+footer .foot-center{
+    width: 50%;
+} */
 
 footer .foot-first,
 footer .foot-center,
@@ -260,6 +275,7 @@ footer .foot-center{
     flex-direction: column;
     color: var(--color-light);
     font-weight: 600;
+    font-size: 0.8rem;
 }
 footer .foot-center .bar-center{
     display: flex;
@@ -285,14 +301,14 @@ footer .bar-lightgray{
     border-radius: 5px;
 }
 footer .foot-last .bar-gray{
-    width: 170px;
+    width: 5vw
 }
 footer .foot-last .bar-lightgray{
     width: 30%;
 }
 footer .foot-center .bar-gray{
-    width: 600px;
-    margin: 0 20px;
+    width: 25vw;
+    margin: 0 10px;
 }
 footer .foot-center .bar-lightgray{
     width: 30%;
