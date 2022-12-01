@@ -244,12 +244,13 @@ footer .foot-last i{
 footer .foot-center .footer-button i{
     color: var(--color-light);
     font-size: 1.5rem;
-    margin: 10px;
+    margin: 0 10px;
 }
 footer .foot-center .footer-button i:nth-child(3){
     color: var(--color-light);
     font-size: 2rem;
-    margin: 20px;
+    margin: 0 20px;
+    margin-bottom: 10px;
 }
 footer .foot-center{
     /* align-self: center; */
