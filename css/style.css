@@ -193,8 +193,10 @@ main{
 }
 
 
-
-
+/* artisti */
+#artisti .card img{
+    border-radius: 50%;
+}
 /* footer  */
 footer{
     position: relative;
