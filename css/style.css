@@ -199,9 +199,58 @@ main{
 footer{
     position: relative;
     z-index: 20;
-    background-color: lightgray;
+    background-color: #282828;
     width: 100%;
     height: var(--height-footer);
     display: flex;
     justify-content: space-between;
+    padding:10px 20px;
+}
+
+footer .foot-first a,
+footer .foot-first i{
+    color: gray;
+}
+
+
+
+footer .foot-first,
+footer .foot-center,
+footer .foot-last,
+footer .footer-song{
+    display: flex;
+    align-items: center;
+}
+/* footer .footer-song{
+    display: flex;
+    align-items: center;
+} */
+footer .footer-song img{
+    width: 50px;
+    margin-right: 10px;
+
+}
+footer .footer-song{
+    margin-right: 30px;
+}
+footer i{
+    margin-right: 20px;
+}
+footer .foot-last i{
+    color: var(--color-light);
+}
+footer .bar-gray{
+    border: 0px solid gray;
+    background-color: gray;
+    width: 170px;
+    height: 7px;
+    border-radius: 5px;
+}
+footer .bar-lightgray{
+    border: 0px solid lightgray;
+    background-color: lightgray;
+    width: 30%;
+    height: 100%;
+    border-radius: 5px;
+
 }
