@@ -2,21 +2,27 @@
 #top-page{
     height: calc(100vh - var(--height-footer));
     display: flex;
+    overflow: hidden;
 }
 
 
 /* aside  */
 aside{
+    height: 100%;
     min-height: 500px;
     width: var(--width-aside);
     background-color: #333;
     padding: 20px;
 }
 aside .aside-header{
-    height: calc(100% - 100px);
+    height: calc(100% - 70px);
 }
 aside .aside-footer{
-    height: 100px;
+    height: 70px;
+    background-color: #333;
+    position: relative;
+    z-index: 2;
+    padding-top: 10px;
 }
 aside .aside-img img{
     width: 150px;
@@ -62,7 +68,7 @@ aside .aside-footer hr{
     margin: var(--mgn-bt-a) 0;
 }
 aside .aside-playlist{
-    max-height: 210px;
+    height: 40%;
     overflow: auto;
 }
 
