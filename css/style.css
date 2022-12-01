@@ -140,6 +140,12 @@ main{
 #navigation ul li:first-child{
     border-bottom: var(--active-page-br);
 }
+
+
+
+
+
+
 /* cards */
 .playlist{
     width: 100%;
@@ -147,6 +153,9 @@ main{
 }
 .playlist .row{
     width: 100%;
+}
+.playlist .row-text{
+    margin-bottom: 30px;
 }
 .playlist .cards{
     display: flex;
@@ -158,13 +167,18 @@ main{
     width: calc((100% / 6) - 10px);
     margin-right: 10px;
     margin-bottom: var(--mgn-bt-card);
+    text-align: center;
 }
 .playlist p{
     color: var(--color-gray);
     font-weight: 600;
-    margin-bottom: var(--mgn-bt-a);
 }
-
+.playlist .card img{
+    width: 100%;
+}
+.playlist .card > *{
+    margin-bottom: 10px;
+}
 
 
 

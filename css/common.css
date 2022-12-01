@@ -40,3 +40,6 @@ h2{
     color: var(--color-light);
     margin-bottom: var(--mgn-bt-a);
 }
+h4{
+    color: var(--color-light);
+}
