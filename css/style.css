@@ -233,24 +233,67 @@ footer .footer-song img{
 footer .footer-song{
     margin-right: 30px;
 }
-footer i{
+footer .foot-last i,
+footer .foot-first i{
     margin-right: 20px;
 }
 footer .foot-last i{
     color: var(--color-light);
 }
+
+footer .foot-center .footer-button i{
+    color: var(--color-light);
+    font-size: 1.5rem;
+    margin: 10px;
+}
+footer .foot-center .footer-button i:nth-child(3){
+    color: var(--color-light);
+    font-size: 2rem;
+    margin: 20px;
+}
+footer .foot-center{
+    /* align-self: center; */
+    display: flex;
+    flex-direction: column;
+    color: var(--color-light);
+    font-weight: 600;
+}
+footer .foot-center .bar-center{
+    display: flex;
+    align-items: center;
+}
+
+
+
+
+
+
+/* progres bar  */
 footer .bar-gray{
     border: 0px solid gray;
     background-color: gray;
-    width: 170px;
     height: 7px;
     border-radius: 5px;
 }
 footer .bar-lightgray{
     border: 0px solid lightgray;
     background-color: lightgray;
-    width: 30%;
     height: 100%;
     border-radius: 5px;
-
 }
+footer .foot-last .bar-gray{
+    width: 170px;
+}
+footer .foot-last .bar-lightgray{
+    width: 30%;
+}
+footer .foot-center .bar-gray{
+    width: 600px;
+    margin: 0 20px;
+}
+footer .foot-center .bar-lightgray{
+    width: 30%;
+}
+
+
+
