@@ -12,7 +12,9 @@ aside .aside-footer #download:hover img{
 #upgrade a:hover{
     font-size: 1.1rem;
 }
-
+aside #profile:hover span{
+    color: var(--color-hv);
+}
 .playlist .box-img:hover .overlay {
     display: flex;
     justify-content: center;

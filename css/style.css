@@ -115,8 +115,9 @@ aside .aside-footer{
 aside .aside-footer hr{
     margin: var(--mgn-bt-a) 0;
 }
-aside .aside-profile a{
+aside #profile span{
     font-weight: 700;
+    color: var(--color-light-due);
 }
 
 
@@ -247,6 +248,13 @@ main{
     width: 100%;
     height: 100%;
 }
+
+/*bonus*/
+.playlist .card .overlay a{
+    color: var(--color-light);
+}
+
+
 
 
 /* artisti */
