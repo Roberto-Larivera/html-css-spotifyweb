@@ -21,3 +21,14 @@ aside .aside-footer #download:hover img{
 .playlist .box-img:hover img {
    filter: grayscale(0.5);
 }
+button:hover i,
+footer .foot-center .footer-button button:hover i{
+    color: var(--color-hv);
+}
+.bar-lightgray:hover{
+    border: 0px solid greenyellow;
+    background-color: greenyellow;
+}
+.bar-lightgray:hover .circle-wt{
+    display: inline-block;
+}

@@ -256,7 +256,7 @@ main{
 footer{
     position: relative;
     z-index: 20;
-    background-color: #282828;
+    background-color: var(--color-footer);
     width: 100%;
     height: var(--height-footer);
     display: flex;
@@ -294,21 +294,19 @@ footer .footer-song{
     margin-right: 30px;
 }
 footer .foot-last i,
-footer .foot-first i{
+footer .foot-first button{
     margin-right: 20px;
 }
-footer .foot-last i{
-    color: var(--color-light);
+footer .foot-last i,
+footer .foot-center i{
+    color: var(--color-light-due);
 }
 
-footer .foot-center .footer-button i{
-    color: var(--color-light);
-    font-size: 1.5em;
+footer .foot-center .footer-button button i{
     margin: 0 10px;
 }
-footer .foot-center .footer-button i:nth-child(3){
-    color: var(--color-light);
-    font-size: 2em;
+footer #button-center{
+    font-size: 2rem;
     margin: 0 20px;
     margin-bottom: 10px;
 }
@@ -316,13 +314,14 @@ footer .foot-center{
     justify-content: space-evenly;
     display: flex;
     flex-direction: column;
-    color: var(--color-light);
-    font-weight: 600;
-    font-size: 0.8rem;
+    
 }
 footer .foot-center .bar-center{
     display: flex;
     align-items: center;
+    color: var(--color-light);
+    font-weight: 600;
+    font-size: 0.8rem;
 }
 
 
@@ -342,6 +341,10 @@ footer .bar-lightgray{
     background-color: lightgray;
     height: 100%;
     border-radius: 5px;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
 }
 footer .foot-last .bar-gray{
     width: 5vw
@@ -358,4 +361,12 @@ footer .foot-center .bar-lightgray{
 }
 
 
+footer .circle-wt{
+    height: 10px;
+    width: 10px;
+    background-color: white;
+    border: 8px solid white;
+    border-radius: 50%;
+    display: none;
+}
 

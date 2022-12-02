@@ -22,6 +22,7 @@ body{
     --padding-aside-mq: 10px;
 
 
+    --color-footer: #282828;
     --color-light: white;
     --color-light-due: rgb(220, 220, 220);
     --color-gray:#808080;
@@ -46,4 +47,11 @@ h2{
 }
 h4{
     color: var(--color-light);
+}
+
+button{
+    background-color: var(--color-footer);
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
 }
