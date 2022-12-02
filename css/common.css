@@ -23,9 +23,11 @@ body{
 
 
     --color-light: white;
+    --color-light-due: rgb(220, 220, 220);
     --color-gray:#808080;
+    --color-hv:white;
 
-    --active-page-br:3px solid greenyellow;
+    --active-page-br:3px solid transparent;
 }
 
 a{

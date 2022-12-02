@@ -35,28 +35,23 @@
     aside{
         width: var(--width-aside-mq);
     }
-    aside .aside-header .aside-img a{
-        text-align: center;
-    }
-    aside .aside-header .aside-nav li,
-    aside .aside-footer .aside-download{
-        justify-content: center;
-    }
-    aside .aside-nav a,
+    aside .aside-nav span,
     aside .aside-button,
     aside .aside-playlist,
-    aside hr,
-    aside .aside-footer a{
+    aside .aside-footer span,
+    aside .aside-footer hr{
         display: none;
-
     }
-    aside .aside-footer img{
-        margin-top: 10px;
-
+    aside .aside-nav li{
+        border: none;
     }
-    aside{
+    aside .aside-footer > a{
+        justify-content: center;
+        margin-bottom: var(--mgn-bt-a);
+    }
+    .aside-footer{
         display: flex;
-        flex-direction: column;
+        flex-direction:column ;
         align-items: center;
     }
 }

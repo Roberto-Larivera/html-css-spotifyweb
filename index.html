@@ -10,6 +10,7 @@
         <link rel="stylesheet" href="css/debug.css">
         <link rel="stylesheet" href="css/common.css">
         <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/animation.css">
         <link rel="stylesheet" href="css/mediaquery.css">
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -36,21 +37,21 @@
                         <nav class="aside-nav">
                             <ul>
                                 <li>
-                                    <img src="img/home.svg" alt="home">
                                     <a href="#">
-                                        home
+                                        <img src="img/home.svg" alt="home">
+                                        <span>home</span>
                                     </a>
                                 </li>
                                 <li>
-                                    <img src="img/search.svg" alt="search">
                                     <a href="#">
-                                        cerca
+                                        <img src="img/search.svg" alt="search">
+                                        <span>cerca</span>
                                     </a>
                                 </li>
                                 <li>
-                                    <img src="img/libreria.svg" alt="libreria">
                                     <a href="#">
-                                        la tua libreria 
+                                        <img src="img/libreria.svg" alt="libreria">
+                                        <span>la tua libreria</span> 
                                     </a>
                                 </li>
                             </ul>
@@ -59,12 +60,10 @@
                             <h3>
                                 playlist
                             </h3>
-                            <div>
+                            <a href="#">
                                 <i class="fa-sharp fa-solid fa-square-plus fa-2x"></i>
-                                <a href="#">
-                                    la tua libreria 
-                                </a>
-                            </div>
+                                Crea Playlist 
+                            </a>
                         </div>
                         <div class="aside-playlist">
                             <ul>
@@ -109,15 +108,15 @@
                     </section> <!--fine anside-header-->
 
                     <section class="aside-footer">
-                        <div class="aside-download">
+                        <a id="download" href="#">
                             <img src="img/download.svg" alt="download">
-                            <a href="#">Installa app</a>
-                        </div>
+                            <span>Installa app</span>
+                        </a>
                         <hr>
-                        <div class="aside-profile">
+                        <a id="profile" href="#">
                             <img src="img/profile.svg" alt="profile">
-                            <a href="#">Roberto</a>
-                        </div>
+                            <span>Roberto</span>
+                        </a>
                     </section>
 
                 </aside> <!--fine aside-->

@@ -1,0 +1,8 @@
+aside  a:hover,
+aside .aside-nav li:first-child a:hover{
+    color: var(--color-hv);
+}
+aside .aside-nav a:hover img,
+aside .aside-footer #download:hover img{
+    filter: invert(0.0);
+}
