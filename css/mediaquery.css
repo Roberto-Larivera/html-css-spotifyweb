@@ -12,6 +12,18 @@
     .playlist .card{
         width: calc((100% / 2) - 10px);
     }
+    footer .footer-song{
+        margin-right: 10px;
+    }
+    footer .foot-last i,
+    footer .foot-first i{
+        margin-right: 10px;
+    }
+    footer .foot-center .footer-button i{
+        color: var(--color-light);
+        font-size: 1.5em;
+        margin: 0 5px;
+    }
 }
 
 
@@ -57,6 +69,31 @@
 }
 
 
+@media screen and (max-width:550px){     /* bonus*/
+    footer .foot-last{
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    footer .foot-first .footer-song{
+        flex-direction: column;
+        text-align: center;
+
+    }
+    footer .foot-first .footer-button{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+
+    }
+    footer .foot-first .footer-song img{
+        width: 30px;
+        border-radius: 50%;
+        margin-right: 0;
+    }
+    footer .foot-last .bar-gray{
+        display: none;
+    }
+}
 
 
 

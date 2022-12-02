@@ -157,11 +157,14 @@ main{
 
 /* upgrade */
 #upgrade{
+    height: 100px;
     position: sticky;
     top: 0;
     background-color: rgba(0, 0, 0, 0.5);
     padding: 15px;
-    text-align: right;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
 }
 #upgrade a{
     text-decoration: none;
@@ -170,7 +173,6 @@ main{
     color: var(--color-light);
     display: inline-block;
     border-radius: 25px;
-    
 }
 
 
@@ -189,6 +191,7 @@ main{
 }
 #navigation ul li:first-child{
     border-bottom: var(--active-page-br);
+    border-color: greenyellow;
 }
 
 
@@ -231,6 +234,20 @@ main{
 }
 
 
+.playlist .box-img{
+    position:relative ;
+}
+.playlist .overlay{
+    display: none;
+    color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
 /* artisti */
 #artisti .card img{
     border-radius: 50%;
@@ -258,13 +275,7 @@ footer .foot-first a{
     font-size: 0.8rem;
 }
 
-/* footer .foot-first,
-footer .foot-last{
-    width: 25%;
-}
-footer .foot-center{
-    width: 50%;
-} */
+
 
 footer .foot-first,
 footer .foot-center,
@@ -273,10 +284,7 @@ footer .footer-song{
     display: flex;
     align-items: center;
 }
-/* footer .footer-song{
-    display: flex;
-    align-items: center;
-} */
+
 footer .footer-song img{
     width: 50px;
     margin-right: 10px;
@@ -305,7 +313,7 @@ footer .foot-center .footer-button i:nth-child(3){
     margin-bottom: 10px;
 }
 footer .foot-center{
-    align-self: center;
+    justify-content: space-evenly;
     display: flex;
     flex-direction: column;
     color: var(--color-light);

@@ -1,9 +1,23 @@
 aside  a:hover,
 aside .aside-nav li:first-child a:hover,
-aside .aside-nav a:hover i{
+aside .aside-nav a:hover i,
+main #navigation a:hover{
     color: var(--color-hv);
 }
 aside .aside-nav a:hover img,
 aside .aside-footer #download:hover img{
     filter: invert(0.0);
+}
+
+#upgrade a:hover{
+    font-size: 1.1rem;
+}
+
+.playlist .box-img:hover .overlay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.playlist .box-img:hover img {
+   filter: grayscale(0.5);
 }
