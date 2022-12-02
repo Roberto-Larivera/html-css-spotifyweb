@@ -160,6 +160,7 @@ main{
     height: 100px;
     position: sticky;
     top: 0;
+    z-index: 10;
     background-color: rgba(0, 0, 0, 0.5);
     padding: 15px;
     display: flex;
@@ -293,22 +294,15 @@ footer .footer-song img{
 footer .footer-song{
     margin-right: 30px;
 }
-footer .foot-last i,
-footer .foot-first button{
-    margin-right: 20px;
-}
+
 footer .foot-last i,
 footer .foot-center i{
     color: var(--color-light-due);
 }
 
-footer .foot-center .footer-button button i{
-    margin: 0 10px;
-}
 footer #button-center{
     font-size: 2rem;
     margin: 0 20px;
-    margin-bottom: 10px;
 }
 footer .foot-center{
     justify-content: space-evenly;
@@ -350,14 +344,14 @@ footer .foot-last .bar-gray{
     width: 5vw
 }
 footer .foot-last .bar-lightgray{
-    width: 30%;
+    width: 50%;
 }
 footer .foot-center .bar-gray{
     width: 25vw;
     margin: 0 10px;
 }
 footer .foot-center .bar-lightgray{
-    width: 30%;
+    width: 20%;
 }
 
 
