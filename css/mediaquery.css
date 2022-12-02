@@ -45,7 +45,7 @@
     aside .aside-nav li{
         border: none;
     }
-    aside .aside-footer > a{
+    aside .aside-footer  a{
         justify-content: center;
         margin-bottom: var(--mgn-bt-a);
     }

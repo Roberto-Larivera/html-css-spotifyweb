@@ -1,5 +1,6 @@
 aside  a:hover,
-aside .aside-nav li:first-child a:hover{
+aside .aside-nav li:first-child a:hover,
+aside .aside-nav a:hover i{
     color: var(--color-hv);
 }
 aside .aside-nav a:hover img,

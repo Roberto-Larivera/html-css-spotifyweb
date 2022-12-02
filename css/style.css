@@ -69,7 +69,7 @@ aside .aside-nav li{
 }
 aside .aside-nav li a,      /*  allineamento img con span */
 aside .aside-button a,
-aside .aside-footer > a{
+aside .aside-footer  a{
     display: flex;
     align-items: center;
     gap: var(--mgn-bt-a)
@@ -89,6 +89,12 @@ aside .aside-nav h3{
 aside .aside-nav i{
     color: var(--color-gray);
 }
+aside .aside-button > div,
+aside .aside-footer > div{
+    display: inline-block;
+}
+
+
 
 aside .aside-playlist{
     height: 40%;
