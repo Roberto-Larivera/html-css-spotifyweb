@@ -203,11 +203,11 @@ main{
 
 /* cards */
 .playlist{
-    width: 100%;
+    /* width: 100%; */
     padding: 20px;
 }
 .playlist .row{
-    width: 100%;
+    /* width: 100%; */
 }
 .playlist .row-text{
     margin-bottom: 30px;
@@ -215,12 +215,12 @@ main{
 .playlist .cards{
     display: flex;
     /* flex-wrap: wrap; */
-    width: 100%;
-    overflow-x: auto;
+    /* width: 100%; */
+    /* overflow-x: auto; */
 }
 .playlist .card{
     /* width: calc((100% / 6) - 10px); */
-    width: 300px;
+    width: 200px;
     /* flex-basis: 500px; */
     margin-right: 10px;
     margin-bottom: var(--mgn-bt-card);
@@ -263,9 +263,14 @@ main{
     width: 100px;
     background-color: red;
 }
-
-
-
+.playlist .row-cards{
+    display: flex;
+    overflow: hidden;
+}
+.playlist .row-cards > div{
+    display: flex;
+    overflow: auto;
+}
 
 
 

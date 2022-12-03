@@ -9,9 +9,9 @@
 
 
 @media screen and (max-width:700px){
-    /* .playlist .card{
-        width: calc((100% / 2) - 10px);
-    } */
+    .playlist .card{
+        width: 150px;
+    }
     footer .footer-song{
         margin-right: 10px;
     }
