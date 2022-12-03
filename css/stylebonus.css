@@ -1,0 +1,398 @@
+/* top page  */
+#top-page{
+    height: calc(100vh - var(--height-footer));
+    display: flex;
+    overflow: hidden;
+}
+
+
+
+
+
+
+
+
+/* aside  */
+aside{
+    height: 100%;
+    min-height: 500px;
+    width: var(--width-aside);
+    background-color: black;
+}
+aside .aside-header{
+    height: calc(100% - 100px);
+}
+
+
+/* aside logo  */
+aside .aside-img img{       /*  logo    */
+    width: 90%;
+    padding: var(--padding-aside);
+}
+#logo-small{                /*  logo  small  */
+    display: none;
+}
+
+
+
+
+/* aside nav */
+aside .aside-nav{
+    margin-bottom: var(--mgn-bt-i);
+}
+aside .aside-nav li,
+aside .aside-button{
+    padding: 0 var(--padding-aside);
+}
+aside .aside-nav li,
+aside .aside-playlist li{
+    margin-bottom: var(--mgn-bt-a);
+}
+aside .aside-playlist{
+    padding-left: var(--padding-aside);
+}
+
+
+
+
+/* controllo aside border per i button */
+aside .aside-nav li{
+    border-left: var(--active-page-br);
+}
+aside .aside-nav li:first-child{
+    border-left-color: greenyellow;
+}
+
+
+aside .aside-nav li{
+    display: inline-block;
+}
+aside .aside-nav li a,      /*  allineamento img con span */
+aside .aside-button a,
+aside .aside-footer  a{
+    display: flex;
+    align-items: center;
+    gap: var(--mgn-bt-a)
+}
+
+aside .aside-nav li:first-child a,      /*  colore profile e link attivo*/
+aside .aside-profile a{
+    color: var(--color-light-due);
+}
+
+aside .aside-nav h3{
+    text-transform: uppercase;
+    margin-bottom: var(--mgn-bt-a);
+    color: var(--color-light);
+}
+
+aside .aside-nav i{
+    color: var(--color-gray);
+}
+aside .aside-button > div,
+aside .aside-footer > div{
+    display: inline-block;
+}
+
+
+
+aside .aside-playlist{
+    height: 40%;
+    overflow: auto;
+}
+
+
+
+aside .aside-footer{
+    height: 100px;
+    background-color: black;
+    position: relative;
+    z-index: 2;
+    padding: var(--padding-aside);
+}
+
+
+aside .aside-footer hr{
+    margin: var(--mgn-bt-a) 0;
+}
+aside #profile span{
+    font-weight: 700;
+    color: var(--color-light-due);
+}
+
+
+
+
+
+
+
+/* controllo aside img  */
+
+aside .aside-nav img,
+aside .aside-footer img{
+    width: 25px;
+}
+aside .aside-nav img,
+aside #download img{
+    filter: invert(0.5);
+}
+aside #profile img{
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    background-color: var(--color-gray);
+}
+
+
+
+
+
+
+/* main  */
+main{
+    background-color: #141922;
+    height: 100%;
+    width: calc(100% - var(--width-aside));
+    overflow: auto;
+}
+
+
+/* upgrade */
+#upgrade{
+    height: 100px;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+#upgrade a{
+    text-decoration: none;
+    padding: 10px 20px;
+    border: 1px solid var(--color-light);
+    color: var(--color-light);
+    display: inline-block;
+    border-radius: 25px;
+}
+
+
+/* navigation */
+#navigation{
+    margin: 10px 0;
+}
+#navigation ul{
+    display: flex;
+    justify-content:center ;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+#navigation ul li{
+    padding: 5px;
+}
+#navigation ul li:first-child{
+    border-bottom: var(--active-page-br);
+    border-color: greenyellow;
+}
+
+
+
+
+
+
+/* cards */
+.playlist{
+    width: 100%;
+    padding: 20px;
+}
+.playlist .row{
+    width: 100%;
+}
+.playlist .row-text{
+    margin-bottom: 30px;
+}
+.playlist .cards{
+    display: flex;
+    /* flex-wrap: wrap; */
+    width: 100%;
+    overflow-x: auto;
+}
+.playlist .card{
+    /* width: calc((100% / 6) - 10px); */
+    width: 300px;
+    /* flex-basis: 500px; */
+    margin-right: 10px;
+    margin-bottom: var(--mgn-bt-card);
+    text-align: center;
+}
+.playlist p{
+    color: var(--color-gray);
+    font-weight: 600;
+}
+.playlist .card img{
+    width: 100%;
+}
+.playlist .card > *{
+    margin-bottom: 10px;
+}
+
+
+.playlist .box-img{
+    position:relative ;
+}
+.playlist .overlay{
+    display: none;
+    color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.playlist .card-overflow{
+    width: 90%;
+    overflow: auto;
+    display: flex;
+}
+.playlist .contenitore{
+    width: 1200px;
+}
+.playlist .blocco{
+    width: 100px;
+    background-color: red;
+}
+
+
+
+
+
+
+
+
+
+
+/*bonus*/
+.playlist .card .overlay a{
+    color: var(--color-light);
+}
+
+
+
+
+/* artisti */
+#artisti .card img{
+    border-radius: 50%;
+}
+/* footer  */
+footer{
+    position: relative;
+    z-index: 20;
+    background-color: var(--color-footer);
+    width: 100%;
+    height: var(--height-footer);
+    display: flex;
+    justify-content: space-between;
+    padding:10px 20px;
+}
+
+footer .foot-first a,
+footer .foot-first i{
+    color: gray;
+}
+footer .foot-first h5{
+    color: var(--color-light);
+}
+footer .foot-first a{
+    font-size: 0.8rem;
+}
+
+
+
+footer .foot-first,
+footer .foot-center,
+footer .foot-last,
+footer .footer-song{
+    display: flex;
+    align-items: center;
+}
+
+footer .footer-song img{
+    width: 50px;
+    margin-right: 10px;
+
+}
+footer .footer-song{
+    margin-right: 30px;
+}
+
+footer .foot-last i,
+footer .foot-center i{
+    color: var(--color-light-due);
+}
+
+footer #button-center{
+    font-size: 2rem;
+    margin: 0 20px;
+}
+footer .foot-center{
+    justify-content: space-evenly;
+    display: flex;
+    flex-direction: column;
+    
+}
+footer .foot-center .bar-center{
+    display: flex;
+    align-items: center;
+    color: var(--color-light);
+    font-weight: 600;
+    font-size: 0.8rem;
+}
+
+
+
+
+
+
+/* progres bar  */
+footer .bar-gray{
+    border: 0px solid gray;
+    background-color: gray;
+    height: 7px;
+    border-radius: 5px;
+}
+footer .bar-lightgray{
+    border: 0px solid lightgray;
+    background-color: lightgray;
+    height: 100%;
+    border-radius: 5px;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+footer .foot-last .bar-gray{
+    width: 5vw
+}
+footer .foot-last .bar-lightgray{
+    width: 50%;
+}
+footer .foot-center .bar-gray{
+    width: 25vw;
+    margin: 0 10px;
+}
+footer .foot-center .bar-lightgray{
+    width: 20%;
+}
+
+
+footer .circle-wt{
+    height: 10px;
+    width: 10px;
+    background-color: white;
+    border: 8px solid white;
+    border-radius: 50%;
+    display: none;
+}
+
