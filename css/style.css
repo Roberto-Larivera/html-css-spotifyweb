@@ -15,12 +15,13 @@
 /* aside  */
 aside{
     height: 100%;
-    min-height: 500px;
     width: var(--width-aside);
     background-color: black;
 }
 aside .aside-header{
     height: calc(100% - 100px);
+    display: flex;
+    flex-direction: column;
 }
 
 
@@ -51,8 +52,13 @@ aside .aside-playlist li{
 aside .aside-playlist{
     padding-left: var(--padding-aside);
 }
-
-
+aside .aside-pre-playlist{
+    overflow: hidden;
+}
+aside .aside-playlist{
+    height: 100%;
+    overflow: auto;
+}
 
 
 /* controllo aside border per i button */
@@ -96,10 +102,7 @@ aside .aside-footer > div{
 
 
 
-aside .aside-playlist{
-    height: 40%;
-    overflow: auto;
-}
+
 
 
 
