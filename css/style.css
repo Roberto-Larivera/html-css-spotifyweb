@@ -100,7 +100,10 @@ aside .aside-footer > div{
     display: inline-block;
 }
 
+aside .aside-playlist{
 
+    overflow: auto;
+}
 
 
 
